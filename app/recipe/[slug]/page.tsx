@@ -6,6 +6,7 @@ const recipes = {
     title: "Pad Thai",
     description: "Classic Thai stir-fried noodles with shrimp, tofu, and peanuts.",
     image: "https://images.unsplash.com/photo-1559314809-0d155014e29e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
     ingredients: [
       "200g rice noodles",
       "2 tablespoons vegetable oil",
@@ -36,6 +37,7 @@ const recipes = {
     title: "Thai Green Curry",
     description: "Spicy and aromatic green curry with coconut milk and vegetables.",
     image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    video: "https://www.youtube.com/watch?v=2u9p8K8Z5fM",
     ingredients: [
       "2 tablespoons green curry paste",
       "1 can (400ml) coconut milk",
@@ -64,6 +66,7 @@ const recipes = {
     title: "Beef Massaman Curry",
     description: "Rich, mild curry with tender beef and potatoes.",
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    video: "https://www.youtube.com/watch?v=6zNp8Hn5P5A",
     ingredients: [
       "2 tablespoons massaman curry paste",
       "1 can (400ml) coconut milk",
@@ -93,6 +96,7 @@ const recipes = {
     title: "Chicken Holy Basil and Chilli",
     description: "Stir-fried chicken with holy basil and spicy chillies.",
     image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
     ingredients: [
       "2 tablespoons vegetable oil",
       "3 cloves garlic, minced",
@@ -119,6 +123,7 @@ const recipes = {
     title: "Duck Red Curry",
     description: "Luxurious red curry with tender duck meat and pineapple.",
     image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    video: "https://www.youtube.com/watch?v=2u9p8K8Z5fM",
     ingredients: [
       "2 tablespoons red curry paste",
       "1 can (400ml) coconut milk",
@@ -147,6 +152,7 @@ const recipes = {
     title: "Tom Yum King Prawn",
     description: "Hot and sour soup with king prawns and lemongrass.",
     image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
     ingredients: [
       "1 liter chicken or vegetable stock",
       "2 stalks lemongrass, bruised",
@@ -172,6 +178,7 @@ const recipes = {
     title: "Tom Kha Chicken",
     description: "Creamy coconut soup with chicken and galangal.",
     image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    video: "https://www.youtube.com/watch?v=2u9p8K8Z5fM",
     ingredients: [
       "1 liter chicken stock",
       "1 can (400ml) coconut milk",
@@ -198,6 +205,7 @@ const recipes = {
     title: "Laab Chicken",
     description: "Spicy minced chicken salad with herbs and lime.",
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    video: "https://www.youtube.com/watch?v=6zNp8Hn5P5A",
     ingredients: [
       "500g ground chicken",
       "2 tablespoons fish sauce",
@@ -220,6 +228,7 @@ const recipes = {
     title: "Yum Beef Salad",
     description: "Tangy grilled beef salad with chili and lime dressing.",
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
     ingredients: [
       "300g beef sirloin, grilled and sliced",
       "2 tablespoons fish sauce",
@@ -242,6 +251,7 @@ const recipes = {
     title: "Seafood Salad",
     description: "Fresh mixed seafood with spicy lime dressing.",
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    video: "https://www.youtube.com/watch?v=2u9p8K8Z5fM",
     ingredients: [
       "200g mixed seafood (shrimp, squid, mussels)",
       "2 tablespoons fish sauce",
@@ -264,6 +274,7 @@ const recipes = {
     title: "Som Tom Green Papaya Salad",
     description: "Shredded papaya with spicy, sour, and sweet dressing.",
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    video: "https://www.youtube.com/watch?v=6zNp8Hn5P5A",
     ingredients: [
       "1 green papaya, shredded",
       "2 tablespoons fish sauce",
@@ -287,6 +298,7 @@ const recipes = {
     title: "Mango Sticky Rice",
     description: "Sweet coconut sticky rice served with fresh mango.",
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
     ingredients: [
       "1 cup glutinous rice",
       "1 can (400ml) coconut milk",
@@ -375,9 +387,20 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
             </div>
 
             <div className="mt-8 text-center">
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
                 Enjoy your homemade {recipe.title}!
               </p>
+              {recipe.video && (
+                <a
+                  href={recipe.video}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                >
+                  <span>🎥</span>
+                  Watch Cooking Video
+                </a>
+              )}
             </div>
           </div>
         </div>
