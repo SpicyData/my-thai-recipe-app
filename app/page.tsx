@@ -1,82 +1,82 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const recipes = [
-  {
-    slug: "pad-thai",
-    title: "Pad Thai",
-    description: "Classic stir-fried noodles with shrimp, tofu, and peanuts.",
-    image: "https://images.unsplash.com/photo-1559314809-0d155014e29e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-  },
-  {
-    slug: "green-curry",
-    title: "Thai Green Curry",
-    description: "Spicy and aromatic curry with coconut milk and vegetables.",
-    image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-  },
-  {
-    slug: "massaman-curry",
-    title: "Beef Massaman Curry",
-    description: "Rich, mild curry with tender beef and potatoes.",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-  },
-  {
-    slug: "holy-basil-chicken",
-    title: "Chicken Holy Basil and Chilli",
-    description: "Stir-fried chicken with holy basil and spicy chillies.",
-    image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-  },
-  {
-    slug: "duck-red-curry",
-    title: "Duck Red Curry",
-    description: "Luxurious red curry with tender duck meat and pineapple.",
-    image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-  },
-  {
-    slug: "tom-yum-king-prawn",
-    title: "Tom Yum King Prawn",
-    description: "Hot and sour soup with king prawns and lemongrass.",
-    image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-  },
-  {
-    slug: "tom-kha-chicken",
-    title: "Tom Kha Chicken",
-    description: "Creamy coconut soup with chicken and galangal.",
-    image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-  },
-  {
-    slug: "laab-chicken",
-    title: "Laab Chicken",
-    description: "Spicy minced chicken salad with herbs and lime.",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-  },
-  {
-    slug: "yum-beef-salad",
-    title: "Yum Beef Salad",
-    description: "Tangy grilled beef salad with chili and lime dressing.",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-  },
-  {
-    slug: "seafood-salad",
-    title: "Seafood Salad",
-    description: "Fresh mixed seafood with spicy lime dressing.",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-  },
-  {
-    slug: "som-tom-green-papaya-salad",
-    title: "Som Tom Green Papaya Salad",
-    description: "Shredded papaya with spicy, sour, and sweet dressing.",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-  },
-  {
-    slug: "mango-sticky-rice",
-    title: "Mango Sticky Rice",
-    description: "Sweet coconut sticky rice served with fresh mango.",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-  },
-];
-
 export default function Home() {
+  const recipes = [
+    {
+      slug: "pad-thai",
+      title: "Pad Thai",
+      description: "Classic stir-fried noodles with shrimp, tofu, and peanuts.",
+      image: "https://images.unsplash.com/photo-1559314809-0d155014e29e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    },
+    {
+      slug: "green-curry",
+      title: "Thai Green Curry",
+      description: "Spicy and aromatic curry with coconut milk and vegetables.",
+      image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    },
+    {
+      slug: "massaman-curry",
+      title: "Beef Massaman Curry",
+      description: "Rich, mild curry with tender beef and potatoes.",
+      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    },
+    {
+      slug: "holy-basil-chicken",
+      title: "Chicken Holy Basil and Chilli",
+      description: "Stir-fried chicken with holy basil and spicy chillies.",
+      image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    },
+    {
+      slug: "duck-red-curry",
+      title: "Duck Red Curry",
+      description: "Luxurious red curry with tender duck meat and pineapple.",
+      image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    },
+    {
+      slug: "tom-yum-king-prawn",
+      title: "Tom Yum King Prawn",
+      description: "Hot and sour soup with king prawns and lemongrass.",
+      image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    },
+    {
+      slug: "tom-kha-chicken",
+      title: "Tom Kha Chicken",
+      description: "Creamy coconut soup with chicken and galangal.",
+      image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    },
+    {
+      slug: "laab-chicken",
+      title: "Laab Chicken",
+      description: "Spicy minced chicken salad with herbs and lime.",
+      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    },
+    {
+      slug: "yum-beef-salad",
+      title: "Yum Beef Salad",
+      description: "Tangy grilled beef salad with chili and lime dressing.",
+      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    },
+    {
+      slug: "seafood-salad",
+      title: "Seafood Salad",
+      description: "Fresh mixed seafood with spicy lime dressing.",
+      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    },
+    {
+      slug: "som-tom-green-papaya-salad",
+      title: "Som Tom Green Papaya Salad",
+      description: "Shredded papaya with spicy, sour, and sweet dressing.",
+      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    },
+    {
+      slug: "mango-sticky-rice",
+      title: "Mango Sticky Rice",
+      description: "Sweet coconut sticky rice served with fresh mango.",
+      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-900 dark:to-black">
       <div className="container mx-auto px-4 py-16">
