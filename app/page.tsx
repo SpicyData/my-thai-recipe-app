@@ -77,7 +77,6 @@ const recipes = [
 ];
 
 export default function Home() {
-  return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-900 dark:to-black">
       <div className="container mx-auto px-4 py-16">
         <header className="text-center mb-12">
@@ -102,12 +101,13 @@ export default function Home() {
           {recipes.map((recipe) => (
             <Link key={recipe.slug} href={`/recipe/${recipe.slug}`}>
               <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
-                <div className="h-48 relative overflow-hidden">
+                <div className="h-48 overflow-hidden">
                   <Image
                     src={recipe.image}
                     alt={recipe.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    width={400}
+                    height={200}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="p-6">

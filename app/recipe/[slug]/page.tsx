@@ -339,12 +339,13 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
         </Link>
 
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-          <div className="h-64 relative overflow-hidden">
+          <div className="h-64 overflow-hidden">
             <Image
               src={recipe.image}
               alt={recipe.title}
-              fill
-              className="object-cover"
+              width={800}
+              height={400}
+              className="w-full h-full object-cover"
             />
           </div>
 
