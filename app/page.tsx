@@ -1,43 +1,82 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const recipes = [
+  {
+    slug: "pad-thai",
+    title: "Pad Thai",
+    description: "Classic stir-fried noodles with shrimp, tofu, and peanuts.",
+    image: "/pad-thai.jpg", // placeholder
+  },
+  {
+    slug: "green-curry",
+    title: "Thai Green Curry",
+    description: "Spicy and aromatic curry with coconut milk and vegetables.",
+    image: "/green-curry.jpg",
+  },
+  {
+    slug: "massaman-curry",
+    title: "Beef Massaman Curry",
+    description: "Rich, mild curry with tender beef and potatoes.",
+    image: "/massaman-curry.jpg",
+  },
+  {
+    slug: "holy-basil-chicken",
+    title: "Chicken Holy Basil and Chilli",
+    description: "Stir-fried chicken with holy basil and spicy chillies.",
+    image: "/holy-basil-chicken.jpg",
+  },
+];
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            Welcome to Thai Recipes App
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-900 dark:to-black">
+      <div className="container mx-auto px-4 py-16">
+        <header className="text-center mb-12">
+          <Image
+            className="mx-auto mb-4 dark:invert"
+            src="/next.svg"
+            alt="Next.js logo"
+            width={120}
+            height={24}
+            priority
+          />
+          <h1 className="text-5xl font-bold text-gray-800 dark:text-white mb-4">
+            Thai Recipes App
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Discover delicious Thai recipes right here. Start with our classic Pad Thai recipe!
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            Discover authentic Thai flavors with our collection of traditional recipes.
+            From stir-fries to curries, explore the taste of Thailand!
           </p>
+        </header>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {recipes.map((recipe) => (
+            <Link key={recipe.slug} href={`/recipe/${recipe.slug}`}>
+              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
+                <div className="h-48 bg-gradient-to-br from-orange-200 to-red-200 dark:from-orange-800 dark:to-red-800 flex items-center justify-center">
+                  <span className="text-6xl">🍜</span> {/* Placeholder emoji */}
+                </div>
+                <div className="p-6">
+                  <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mb-2 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">
+                    {recipe.title}
+                  </h2>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    {recipe.description}
+                  </p>
+                  <div className="mt-4 text-orange-600 dark:text-orange-400 font-medium">
+                    View Recipe →
+                  </div>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <Link
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="/recipe"
-          >
-            View Recipe
-          </Link>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+
+        <footer className="text-center mt-16 text-gray-500 dark:text-gray-400">
+          <p>Built with Next.js and Tailwind CSS</p>
+        </footer>
+      </div>
     </div>
   );
 }

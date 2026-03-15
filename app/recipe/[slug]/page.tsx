@@ -1,0 +1,189 @@
+import Link from "next/link";
+
+const recipes = {
+  "pad-thai": {
+    title: "Pad Thai",
+    description: "Classic Thai stir-fried noodles with shrimp, tofu, and peanuts.",
+    ingredients: [
+      "200g rice noodles",
+      "2 tablespoons vegetable oil",
+      "2 cloves garlic, minced",
+      "1 cup shrimp or chicken, peeled and deveined",
+      "2 eggs, beaten",
+      "2 tablespoons fish sauce",
+      "1 tablespoon soy sauce",
+      "1 tablespoon tamarind paste",
+      "1 tablespoon sugar",
+      "1 cup bean sprouts",
+      "2 green onions, chopped",
+      "1/4 cup chopped peanuts",
+      "Lime wedges for serving"
+    ],
+    instructions: [
+      "Soak rice noodles in warm water for 10 minutes until soft, then drain.",
+      "Heat oil in a wok or large pan over medium-high heat.",
+      "Add garlic and stir-fry for 30 seconds.",
+      "Add shrimp or chicken and cook until done, about 2-3 minutes.",
+      "Push ingredients to one side and scramble eggs in the pan.",
+      "Add noodles, fish sauce, soy sauce, tamarind paste, and sugar. Stir-fry for 2-3 minutes.",
+      "Add bean sprouts and green onions, cook for another minute.",
+      "Serve hot with chopped peanuts and lime wedges."
+    ]
+  },
+  "green-curry": {
+    title: "Thai Green Curry",
+    description: "Spicy and aromatic green curry with coconut milk and vegetables.",
+    ingredients: [
+      "2 tablespoons green curry paste",
+      "1 can (400ml) coconut milk",
+      "1 cup chicken or vegetable broth",
+      "2 tablespoons fish sauce",
+      "1 tablespoon sugar",
+      "1 cup chicken, sliced",
+      "1 cup eggplant, cubed",
+      "1 cup bell peppers, sliced",
+      "1 cup bamboo shoots",
+      "1/4 cup Thai basil leaves",
+      "Jasmine rice for serving"
+    ],
+    instructions: [
+      "Heat 2 tablespoons of thick coconut cream in a wok over medium heat.",
+      "Add green curry paste and fry for 1-2 minutes until fragrant.",
+      "Add chicken and cook until nearly done.",
+      "Pour in remaining coconut milk and broth, bring to a simmer.",
+      "Add fish sauce, sugar, eggplant, bell peppers, and bamboo shoots.",
+      "Simmer for 10-15 minutes until vegetables are tender.",
+      "Stir in Thai basil leaves just before serving.",
+      "Serve hot with jasmine rice."
+    ]
+  },
+  "massaman-curry": {
+    title: "Beef Massaman Curry",
+    description: "Rich, mild curry with tender beef and potatoes.",
+    ingredients: [
+      "2 tablespoons massaman curry paste",
+      "1 can (400ml) coconut milk",
+      "1 cup beef broth",
+      "2 tablespoons fish sauce",
+      "1 tablespoon sugar",
+      "500g beef chuck, cubed",
+      "2 potatoes, peeled and cubed",
+      "1 onion, quartered",
+      "1/4 cup peanuts",
+      "2 tablespoons tamarind paste",
+      "Cinnamon stick, cardamom pods (optional)",
+      "Jasmine rice for serving"
+    ],
+    instructions: [
+      "Heat coconut cream in a large pot over medium heat.",
+      "Add massaman curry paste and fry for 2 minutes.",
+      "Add beef cubes and brown on all sides.",
+      "Pour in coconut milk and beef broth, bring to a boil.",
+      "Add potatoes, onion, peanuts, tamarind paste, and spices.",
+      "Simmer for 1-1.5 hours until beef is tender.",
+      "Season with fish sauce and sugar to taste.",
+      "Serve with jasmine rice."
+    ]
+  },
+  "holy-basil-chicken": {
+    title: "Chicken Holy Basil and Chilli",
+    description: "Stir-fried chicken with holy basil and spicy chillies.",
+    ingredients: [
+      "2 tablespoons vegetable oil",
+      "3 cloves garlic, minced",
+      "2-3 Thai chillies, chopped",
+      "500g ground chicken",
+      "2 tablespoons fish sauce",
+      "1 tablespoon soy sauce",
+      "1 tablespoon sugar",
+      "1 cup holy basil leaves",
+      "1 red bell pepper, sliced",
+      "Jasmine rice for serving"
+    ],
+    instructions: [
+      "Heat oil in a wok over high heat.",
+      "Add garlic and chillies, stir-fry for 30 seconds.",
+      "Add ground chicken and cook until browned.",
+      "Add fish sauce, soy sauce, and sugar, stir well.",
+      "Add bell pepper and cook for 1 minute.",
+      "Toss in holy basil leaves and stir until wilted.",
+      "Serve immediately with jasmine rice."
+    ]
+  }
+};
+
+export default function RecipePage({ params }: { params: { slug: string } }) {
+  const recipe = recipes[params.slug as keyof typeof recipes];
+
+  if (!recipe) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold mb-4">Recipe Not Found</h1>
+          <Link href="/" className="text-blue-600 hover:underline">Back to Home</Link>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-900 dark:to-black py-16">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <Link href="/" className="inline-block mb-8 text-orange-600 hover:text-orange-700 font-medium">
+          ← Back to Recipes
+        </Link>
+
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+          <div className="h-64 bg-gradient-to-br from-orange-200 to-red-200 dark:from-orange-800 dark:to-red-800 flex items-center justify-center">
+            <span className="text-8xl">🍜</span>
+          </div>
+
+          <div className="p-8">
+            <h1 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">
+              {recipe.title}
+            </h1>
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
+              {recipe.description}
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">
+                  Ingredients
+                </h2>
+                <ul className="space-y-2">
+                  {recipe.ingredients.map((ingredient, index) => (
+                    <li key={index} className="flex items-center text-gray-700 dark:text-gray-300">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 flex-shrink-0"></span>
+                      {ingredient}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">
+                  Instructions
+                </h2>
+                <ol className="space-y-3">
+                  {recipe.instructions.map((instruction, index) => (
+                    <li key={index} className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                      <span className="font-semibold text-orange-600 mr-2">{index + 1}.</span>
+                      {instruction}
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </div>
+
+            <div className="mt-8 text-center">
+              <p className="text-gray-600 dark:text-gray-400">
+                Enjoy your homemade {recipe.title}!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
