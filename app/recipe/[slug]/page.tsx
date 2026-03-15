@@ -4,316 +4,339 @@ import Image from "next/image";
 const recipes = {
   "pad-thai": {
     title: "Pad Thai",
+    thaiName: "Pad Thai",
     description: "Classic Thai stir-fried noodles with shrimp, tofu, and peanuts.",
     image: "https://images.unsplash.com/photo-1559314809-0d155014e29e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
+    serves: "2–3",
     ingredients: [
-      "200g rice noodles",
-      "2 tablespoons vegetable oil",
-      "2 cloves garlic, minced",
-      "1 cup shrimp or chicken, peeled and deveined",
-      "2 eggs, beaten",
-      "2 tablespoons fish sauce",
-      "1 tablespoon soy sauce",
-      "1 tablespoon tamarind paste",
-      "1 tablespoon sugar",
-      "1 cup bean sprouts",
+      "200g flat rice noodles (medium width), soaked 30 mins",
+      "200g shrimp, chicken, or firm tofu",
+      "2 eggs",
+      "3 tbsp fish sauce (or soy sauce for vegan)",
+      "2 tbsp tamarind paste",
+      "1 tbsp oyster sauce",
+      "2 tsp sugar",
+      "3 tbsp neutral oil",
+      "3 garlic cloves, minced",
+      "2 shallots, thinly sliced",
       "2 green onions, chopped",
-      "1/4 cup chopped peanuts",
-      "Lime wedges for serving"
+      "1/2 cup bean sprouts",
+      "1/4 cup roasted peanuts, roughly crushed"
     ],
     instructions: [
-      "Soak rice noodles in warm water for 10 minutes until soft, then drain.",
-      "Heat oil in a wok or large pan over medium-high heat.",
-      "Add garlic and stir-fry for 30 seconds.",
-      "Add shrimp or chicken and cook until done, about 2-3 minutes.",
-      "Push ingredients to one side and scramble eggs in the pan.",
-      "Add noodles, fish sauce, soy sauce, tamarind paste, and sugar. Stir-fry for 2-3 minutes.",
-      "Add bean sprouts and green onions, cook for another minute.",
-      "Serve hot with chopped peanuts and lime wedges."
-    ]
+      "Soak rice noodles in room-temperature water for 30 minutes until pliable but not fully soft. Drain.",
+      "Mix the sauce: combine fish sauce, tamarind paste, oyster sauce, and sugar. Stir well and set aside.",
+      "Heat oil in a wok over high heat. Add garlic and shallots, stir-fry 30 seconds.",
+      "Add shrimp/chicken/tofu and cook until done. Push to the side of the wok.",
+      "Crack eggs into the wok and scramble lightly until just set, then mix with the protein.",
+      "Add drained noodles and pour the sauce over everything. Toss quickly over high heat for 2–3 minutes until noodles absorb the sauce and caramelise slightly.",
+      "Add bean sprouts and green onions, toss for 30 more seconds. Remove from heat.",
+      "Serve topped with crushed peanuts, lime wedges, coriander, and chilli flakes."
+    ],
+    tip: "High heat is key — a screaming hot wok gives you that signature smoky 'wok hei' flavour. Cook in batches if doubling the recipe."
   },
   "green-curry": {
-    title: "Thai Green Curry",
-    description: "Spicy and aromatic green curry with coconut milk and vegetables.",
+    title: "Chicken Thai Green Curry",
+    thaiName: "Gaeng Keow Wan Gai",
+    description: "Spicy and aromatic curry with coconut milk and vegetables.",
     image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     video: "https://www.youtube.com/watch?v=2u9p8K8Z5fM",
+    serves: "4",
     ingredients: [
-      "2 tablespoons green curry paste",
-      "1 can (400ml) coconut milk",
-      "1 cup chicken or vegetable broth",
-      "2 tablespoons fish sauce",
-      "1 tablespoon sugar",
-      "1 cup chicken, sliced",
-      "1 cup eggplant, cubed",
-      "1 cup bell peppers, sliced",
-      "1 cup bamboo shoots",
-      "1/4 cup Thai basil leaves",
-      "Jasmine rice for serving"
+      "500g chicken thighs, sliced",
+      "400ml coconut milk",
+      "2–3 tbsp green curry paste",
+      "1 tbsp fish sauce",
+      "1 tsp sugar",
+      "6 kaffir lime leaves, torn",
+      "1 cup Thai eggplant, quartered",
+      "1 cup baby spinach or Thai basil",
+      "1 tbsp oil"
     ],
     instructions: [
-      "Heat 2 tablespoons of thick coconut cream in a wok over medium heat.",
-      "Add green curry paste and fry for 1-2 minutes until fragrant.",
-      "Add chicken and cook until nearly done.",
-      "Pour in remaining coconut milk and broth, bring to a simmer.",
-      "Add fish sauce, sugar, eggplant, bell peppers, and bamboo shoots.",
-      "Simmer for 10-15 minutes until vegetables are tender.",
-      "Stir in Thai basil leaves just before serving.",
-      "Serve hot with jasmine rice."
-    ]
+      "Heat oil in a wok, fry green curry paste for 1 minute until fragrant.",
+      "Add half the coconut milk and stir until it splits and oils appear.",
+      "Add chicken, cook until sealed.",
+      "Pour in remaining coconut milk, eggplant, fish sauce, sugar, and lime leaves.",
+      "Simmer 12 minutes. Finish with Thai basil. Serve with jasmine rice."
+    ],
+    tip: "For extra richness, use full-fat coconut milk."
   },
   "massaman-curry": {
     title: "Beef Massaman Curry",
+    thaiName: "Gaeng Massaman Nuea",
     description: "Rich, mild curry with tender beef and potatoes.",
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     video: "https://www.youtube.com/watch?v=6zNp8Hn5P5A",
+    serves: "4",
     ingredients: [
-      "2 tablespoons massaman curry paste",
-      "1 can (400ml) coconut milk",
-      "1 cup beef broth",
-      "2 tablespoons fish sauce",
-      "1 tablespoon sugar",
-      "500g beef chuck, cubed",
-      "2 potatoes, peeled and cubed",
+      "600g beef chuck, cubed",
+      "400ml coconut milk + 200ml water",
+      "3 tbsp massaman curry paste",
+      "2 potatoes, cubed",
       "1 onion, quartered",
-      "1/4 cup peanuts",
-      "2 tablespoons tamarind paste",
-      "Cinnamon stick, cardamom pods (optional)",
-      "Jasmine rice for serving"
+      "2 tbsp tamarind paste",
+      "1 tbsp palm sugar",
+      "2 tbsp fish sauce",
+      "1/4 cup roasted peanuts",
+      "3 cardamom pods",
+      "2 bay leaves"
     ],
     instructions: [
-      "Heat coconut cream in a large pot over medium heat.",
-      "Add massaman curry paste and fry for 2 minutes.",
-      "Add beef cubes and brown on all sides.",
-      "Pour in coconut milk and beef broth, bring to a boil.",
-      "Add potatoes, onion, peanuts, tamarind paste, and spices.",
-      "Simmer for 1-1.5 hours until beef is tender.",
-      "Season with fish sauce and sugar to taste.",
-      "Serve with jasmine rice."
-    ]
+      "Fry curry paste in oil for 1 minute. Add coconut milk, bring to simmer.",
+      "Add beef, potatoes, onion, cardamom, bay leaves, and water.",
+      "Season with tamarind, palm sugar, and fish sauce.",
+      "Simmer low and slow for 1.5–2 hours until beef is melt-tender.",
+      "Top with peanuts. Serve with roti or jasmine rice."
+    ],
+    tip: "This curry gets better the next day — make it ahead!"
   },
   "holy-basil-chicken": {
-    title: "Chicken Holy Basil and Chilli",
+    title: "Minced Chicken Holy Basil & Chilli",
+    thaiName: "Gai Pad Krapow",
     description: "Stir-fried chicken with holy basil and spicy chillies.",
     image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
+    serves: "2–3",
     ingredients: [
-      "2 tablespoons vegetable oil",
-      "3 cloves garlic, minced",
-      "2-3 Thai chillies, chopped",
-      "500g ground chicken",
-      "2 tablespoons fish sauce",
-      "1 tablespoon soy sauce",
-      "1 tablespoon sugar",
+      "400g minced chicken",
       "1 cup holy basil leaves",
-      "1 red bell pepper, sliced",
-      "Jasmine rice for serving"
+      "4–6 Thai bird's eye chillies, sliced",
+      "4 garlic cloves, minced",
+      "1 tbsp oyster sauce",
+      "1 tbsp fish sauce",
+      "1 tsp dark soy",
+      "1 tsp sugar",
+      "2 tbsp oil"
     ],
     instructions: [
-      "Heat oil in a wok over high heat.",
-      "Add garlic and chillies, stir-fry for 30 seconds.",
-      "Add ground chicken and cook until browned.",
-      "Add fish sauce, soy sauce, and sugar, stir well.",
-      "Add bell pepper and cook for 1 minute.",
-      "Toss in holy basil leaves and stir until wilted.",
-      "Serve immediately with jasmine rice."
-    ]
+      "Heat oil on very high heat. Fry garlic and chillies for 30 seconds.",
+      "Add minced chicken, break up and cook until browned.",
+      "Add oyster sauce, fish sauce, dark soy, and sugar. Toss well.",
+      "Kill heat, add holy basil and stir through until just wilted.",
+      "Serve over rice, topped with a runny fried egg."
+    ],
+    tip: "Holy basil (krapow) is different from Thai sweet basil — use the real thing for authentic flavour."
   },
   "duck-red-curry": {
     title: "Duck Red Curry",
+    thaiName: "Gaeng Phed Ped Yang",
     description: "Luxurious red curry with tender duck meat and pineapple.",
     image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    video: "https://www.youtube.com/watch?v=2u9p8K8Z5fM",
+    video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
+    serves: "4",
     ingredients: [
-      "2 tablespoons red curry paste",
-      "1 can (400ml) coconut milk",
-      "1 cup duck stock or chicken broth",
-      "2 tablespoons fish sauce",
-      "1 tablespoon sugar",
-      "500g duck meat, deboned and cubed",
-      "1 cup pineapple chunks",
-      "1 cup cherry tomatoes",
-      "1 cup eggplant, cubed",
-      "1/4 cup Thai basil leaves",
-      "Jasmine rice for serving"
+      "1 roasted duck, meat removed and sliced",
+      "400ml coconut milk",
+      "2–3 tbsp red curry paste",
+      "1/2 cup pineapple chunks",
+      "1/2 cup cherry tomatoes",
+      "6 kaffir lime leaves",
+      "2 tbsp fish sauce",
+      "1 tsp sugar",
+      "Thai basil to finish"
     ],
     instructions: [
-      "Heat coconut cream in a wok over medium heat.",
-      "Add red curry paste and fry for 2 minutes until fragrant.",
-      "Add duck meat and cook until browned.",
-      "Pour in remaining coconut milk and stock, bring to a simmer.",
-      "Add fish sauce, sugar, pineapple, tomatoes, and eggplant.",
-      "Simmer for 15-20 minutes until duck is tender.",
-      "Stir in Thai basil leaves just before serving.",
-      "Serve hot with jasmine rice."
-    ]
+      "Fry red curry paste in a little coconut milk until fragrant.",
+      "Add remaining coconut milk and bring to a gentle simmer.",
+      "Add duck, pineapple, tomatoes, lime leaves, fish sauce, and sugar.",
+      "Simmer 10 minutes — don't overcook the duck.",
+      "Finish with Thai basil. Serve with steamed rice."
+    ],
+    tip: "Buy a pre-roasted duck from a Chinese BBQ shop to save time."
   },
   "tom-yum-king-prawn": {
     title: "Tom Yum King Prawn",
+    thaiName: "Tom Yum Goong",
     description: "Hot and sour soup with king prawns and lemongrass.",
     image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
+    serves: "4",
     ingredients: [
-      "1 liter chicken or vegetable stock",
-      "2 stalks lemongrass, bruised",
-      "3 kaffir lime leaves",
-      "2 tablespoons fish sauce",
-      "1 tablespoon lime juice",
-      "2-3 Thai chillies, bruised",
-      "200g king prawns, peeled",
-      "100g mushrooms, sliced",
-      "2 tablespoons chili paste",
-      "Fresh cilantro for garnish"
+      "300g king prawns, shell-on",
+      "1L chicken or prawn stock",
+      "3 stalks lemongrass, bruised",
+      "4 kaffir lime leaves",
+      "4 slices galangal",
+      "2–3 bird's eye chillies",
+      "200g oyster mushrooms",
+      "2 tbsp fish sauce",
+      "2 tbsp lime juice",
+      "1 tbsp roasted chilli paste (nam prik pao)"
     ],
     instructions: [
-      "Bring stock to a boil in a large pot.",
-      "Add lemongrass, kaffir lime leaves, and chillies. Simmer for 5 minutes.",
-      "Add chili paste and fish sauce, stir well.",
-      "Add prawns and mushrooms, cook for 3-4 minutes until prawns are pink.",
-      "Remove from heat and stir in lime juice.",
-      "Garnish with cilantro and serve hot."
-    ]
+      "Bring stock to boil with lemongrass, galangal, lime leaves, and chillies.",
+      "Simmer 5 minutes to infuse. Add mushrooms and cook 3 minutes.",
+      "Add prawns and cook just until pink (about 2 minutes).",
+      "Stir in fish sauce, lime juice, and chilli paste.",
+      "Taste and balance: sour, spicy, salty. Garnish with coriander."
+    ],
+    tip: "Keep the prawn shells on during cooking for deeper flavour."
   },
   "tom-kha-chicken": {
-    title: "Tom Kha Chicken",
+    title: "Tom Kha Chicken Soup",
+    thaiName: "Tom Kha Gai",
     description: "Creamy coconut soup with chicken and galangal.",
     image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    video: "https://www.youtube.com/watch?v=2u9p8K8Z5fM",
+    video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
+    serves: "4",
     ingredients: [
-      "1 liter chicken stock",
-      "1 can (400ml) coconut milk",
-      "2 stalks lemongrass, bruised",
-      "3 slices galangal",
-      "3 kaffir lime leaves",
-      "2 tablespoons fish sauce",
-      "1 tablespoon lime juice",
-      "200g chicken breast, sliced",
-      "100g mushrooms, sliced",
-      "2-3 Thai chillies, bruised",
-      "Fresh cilantro for garnish"
+      "400g chicken breast, thinly sliced",
+      "400ml coconut milk + 400ml chicken stock",
+      "3 stalks lemongrass, bruised",
+      "6 slices galangal",
+      "4 kaffir lime leaves",
+      "200g mushrooms",
+      "2 tbsp fish sauce",
+      "2 tbsp lime juice",
+      "1 tsp sugar",
+      "2 red chillies, sliced"
     ],
     instructions: [
-      "Bring chicken stock to a boil in a large pot.",
-      "Add lemongrass, galangal, and kaffir lime leaves. Simmer for 5 minutes.",
-      "Add coconut milk and bring back to a simmer.",
-      "Add chicken and mushrooms, cook for 5-7 minutes until chicken is done.",
-      "Season with fish sauce, lime juice, and chillies.",
-      "Garnish with cilantro and serve hot."
-    ]
+      "Combine coconut milk, stock, lemongrass, galangal, and lime leaves. Bring to simmer.",
+      "Add chicken and mushrooms. Cook 8–10 minutes until chicken is cooked through.",
+      "Season with fish sauce, lime juice, and sugar.",
+      "Ladle into bowls with chilli and coriander on top."
+    ],
+    tip: "Tom Kha should taste coconutty, sour, and fragrant — milder than Tom Yum."
   },
   "laab-chicken": {
     title: "Laab Chicken",
+    thaiName: "Laab Gai",
     description: "Spicy minced chicken salad with herbs and lime.",
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    video: "https://www.youtube.com/watch?v=6zNp8Hn5P5A",
+    video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
+    serves: "2–3",
     ingredients: [
-      "500g ground chicken",
-      "2 tablespoons fish sauce",
-      "1 tablespoon lime juice",
-      "2-3 Thai chillies, chopped",
+      "400g minced chicken",
+      "3 tbsp fish sauce",
+      "3 tbsp lime juice",
+      "1 tbsp toasted rice powder (khao khua)",
+      "1 tsp roasted chilli flakes",
       "2 shallots, thinly sliced",
-      "1/4 cup fresh mint leaves",
-      "1/4 cup fresh cilantro",
-      "2 tablespoons toasted rice powder",
-      "Lettuce leaves for serving"
+      "2 spring onions, sliced",
+      "Large handful fresh mint + coriander"
     ],
     instructions: [
-      "Cook ground chicken in a pan over medium heat until browned, breaking up lumps.",
-      "In a bowl, mix cooked chicken with fish sauce, lime juice, and chillies.",
-      "Add shallots, mint, cilantro, and toasted rice powder. Mix well.",
-      "Serve on lettuce leaves as a fresh salad."
-    ]
+      "Make toasted rice powder: dry toast raw rice in pan until golden, then grind.",
+      "Cook minced chicken in a dry pan with a splash of water — no oil needed.",
+      "Once cooked, remove from heat and let cool slightly.",
+      "Season with fish sauce, lime juice, chilli flakes, and toasted rice powder.",
+      "Toss in shallots, spring onions, mint, and coriander.",
+      "Serve with sticky rice, lettuce cups, and cucumber."
+    ],
+    tip: "Toasted rice powder is the secret ingredient — don't skip it!"
   },
   "yum-beef-salad": {
     title: "Yum Beef Salad",
+    thaiName: "Yum Nua",
     description: "Tangy grilled beef salad with chili and lime dressing.",
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
+    serves: "2–3",
     ingredients: [
-      "300g beef sirloin, grilled and sliced",
-      "2 tablespoons fish sauce",
-      "1 tablespoon lime juice",
-      "2-3 Thai chillies, chopped",
-      "2 shallots, thinly sliced",
-      "1 cucumber, sliced",
-      "1 tomato, wedged",
-      "1/4 cup fresh mint leaves",
-      "1/4 cup fresh cilantro"
+      "400g sirloin or flank steak",
+      "2 tbsp fish sauce",
+      "3 tbsp lime juice",
+      "1 tsp sugar",
+      "2–3 bird's eye chillies, finely sliced",
+      "2 shallots, sliced",
+      "1 stalk lemongrass (tender part), finely sliced",
+      "Cherry tomatoes, halved",
+      "Cucumber, sliced",
+      "Fresh mint and coriander"
     ],
     instructions: [
-      "Grill beef to medium-rare, then slice thinly.",
-      "In a bowl, whisk together fish sauce, lime juice, and chillies.",
-      "Add sliced beef, shallots, cucumber, tomato, mint, and cilantro.",
-      "Toss everything together and serve immediately."
-    ]
+      "Grill or pan-sear steak to medium-rare. Rest 5 minutes, then slice thinly.",
+      "Whisk together fish sauce, lime juice, sugar, and chillies.",
+      "Toss beef with dressing, shallots, lemongrass, tomatoes, and cucumber.",
+      "Pile on a platter with fresh herbs on top."
+    ],
+    tip: "Slice beef against the grain for the most tender result."
   },
   "seafood-salad": {
     title: "Seafood Salad",
+    thaiName: "Yum Talay",
     description: "Fresh mixed seafood with spicy lime dressing.",
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    video: "https://www.youtube.com/watch?v=2u9p8K8Z5fM",
+    video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
+    serves: "3–4",
     ingredients: [
-      "200g mixed seafood (shrimp, squid, mussels)",
-      "2 tablespoons fish sauce",
-      "1 tablespoon lime juice",
-      "2-3 Thai chillies, chopped",
-      "2 shallots, thinly sliced",
-      "1/4 cup fresh mint leaves",
-      "1/4 cup fresh cilantro",
-      "1 tablespoon palm sugar",
-      "Lettuce for serving"
+      "150g shrimp",
+      "150g squid rings",
+      "100g mussels",
+      "100g white fish pieces",
+      "3 tbsp fish sauce",
+      "3 tbsp lime juice",
+      "1 tsp sugar",
+      "3–4 bird's eye chillies, sliced",
+      "3 garlic cloves, minced",
+      "2 shallots, sliced",
+      "1 stalk lemongrass, finely sliced",
+      "Celery stalks and leaves, chopped",
+      "Cherry tomatoes",
+      "Mint, coriander"
     ],
     instructions: [
-      "Blanch seafood in boiling water for 1-2 minutes, then drain and cool.",
-      "In a bowl, mix fish sauce, lime juice, palm sugar, and chillies.",
-      "Add cooked seafood, shallots, mint, and cilantro.",
-      "Toss well and serve on lettuce leaves."
-    ]
+      "Blanch all seafood briefly in salted boiling water — shrimp 2 mins, squid 1 min, fish 2 mins.",
+      "Make dressing: mix fish sauce, lime juice, sugar, garlic, and chillies.",
+      "Toss warm seafood with dressing, shallots, lemongrass, tomatoes, and celery.",
+      "Top with mint and coriander. Serve immediately."
+    ],
+    tip: "Serve while the seafood is still warm — it absorbs the dressing better."
   },
   "som-tom-green-papaya-salad": {
-    title: "Som Tom Green Papaya Salad",
+    title: "Som Tum Green Papaya Salad",
+    thaiName: "Som Tum Thai",
     description: "Shredded papaya with spicy, sour, and sweet dressing.",
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    video: "https://www.youtube.com/watch?v=6zNp8Hn5P5A",
+    video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
+    serves: "2",
     ingredients: [
-      "1 green papaya, shredded",
-      "2 tablespoons fish sauce",
-      "1 tablespoon lime juice",
-      "2-3 Thai chillies, chopped",
-      "2 cloves garlic, minced",
-      "1 tablespoon palm sugar",
-      "1 cup cherry tomatoes, halved",
-      "1/4 cup roasted peanuts",
-      "1 carrot, shredded"
+      "2 cups green papaya, julienned or grated",
+      "6–8 cherry tomatoes, halved",
+      "1/4 cup long beans, cut into 2cm pieces",
+      "2–4 bird's eye chillies",
+      "2 garlic cloves",
+      "2 tbsp fish sauce",
+      "2 tbsp lime juice",
+      "1 tbsp palm sugar",
+      "2 tbsp dried shrimp",
+      "2 tbsp roasted peanuts"
     ],
     instructions: [
-      "Pound chillies and garlic in a mortar and pestle.",
-      "Add fish sauce, lime juice, and palm sugar, mix well.",
-      "In a bowl, combine papaya, carrot, tomatoes, and peanuts.",
-      "Pour dressing over and toss thoroughly.",
-      "Serve immediately as a fresh salad."
-    ]
+      "In a large mortar, pound chillies and garlic to a rough paste.",
+      "Add long beans and lightly bruise. Add tomatoes and crush gently.",
+      "Add fish sauce, lime juice, and palm sugar — pound lightly to combine.",
+      "Add papaya and dried shrimp, toss and lightly pound to mix and bruise.",
+      "Plate and top with peanuts. Serve with sticky rice."
+    ],
+    tip: "The pounding technique (not blending) is what gives Som Tum its unique texture."
   },
   "mango-sticky-rice": {
     title: "Mango Sticky Rice",
+    thaiName: "Khao Niao Mamuang",
     description: "Sweet coconut sticky rice served with fresh mango.",
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
+    serves: "4",
     ingredients: [
-      "1 cup glutinous rice",
-      "1 can (400ml) coconut milk",
-      "1/2 cup sugar",
-      "1/4 teaspoon salt",
-      "2 ripe mangoes, peeled and sliced",
-      "Sesame seeds for garnish (optional)"
+      "1 cup glutinous (sticky) rice, soaked overnight",
+      "400ml coconut milk",
+      "3 tbsp sugar",
+      "1/2 tsp salt",
+      "2 ripe mangoes, sliced",
+      "Coconut topping: 3 tbsp coconut milk + pinch salt + 1 tsp rice flour"
     ],
     instructions: [
-      "Soak glutinous rice in water for 4 hours, then steam for 20-25 minutes until tender.",
-      "In a saucepan, heat coconut milk, sugar, and salt until sugar dissolves.",
-      "Pour half the coconut sauce over the cooked rice and let soak for 30 minutes.",
-      "Serve rice with sliced mango, drizzle remaining sauce on top.",
-      "Garnish with sesame seeds if desired."
-    ]
+      "Steam soaked sticky rice for 20–25 minutes until fully cooked.",
+      "Warm coconut milk with sugar and salt — do not boil. Stir to dissolve.",
+      "Pour warm coconut milk over hot cooked rice. Stir, cover, and rest 20 minutes to absorb.",
+      "Make coconut topping: gently heat coconut milk with salt and rice flour until just thickened.",
+      "Plate rice alongside sliced mango, drizzle coconut sauce over the rice."
+    ],
+    tip: "Use Nam Dok Mai mangoes if you can find them — fragrant, sweet, and buttery."
   }
 };
 
@@ -322,24 +345,28 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
 
   if (!recipe) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-900 dark:to-black flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">Recipe Not Found</h1>
-          <Link href="/" className="text-blue-600 hover:underline">Back to Home</Link>
+          <h1 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">Recipe Not Found</h1>
+          <p className="text-gray-600 dark:text-gray-400 mb-8">The recipe you're looking for doesn't exist.</p>
+          <Link href="/" className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+            Back to Home
+          </Link>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-900 dark:to-black py-16">
-      <div className="container mx-auto px-4 max-w-4xl">
-        <Link href="/" className="inline-block mb-8 text-orange-600 hover:text-orange-700 font-medium">
-          ← Back to Recipes
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-900 dark:to-black">
+      <div className="container mx-auto px-4 py-8 max-w-4xl">
+        <Link href="/" className="inline-flex items-center gap-2 text-orange-600 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-300 mb-6 transition-colors">
+          <span>←</span>
+          Back to Recipes
         </Link>
 
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-          <div className="h-64 overflow-hidden">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden">
+          <div className="h-64 md:h-80 overflow-hidden">
             <Image
               src={recipe.image}
               alt={recipe.title}
@@ -350,12 +377,24 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
           </div>
 
           <div className="p-8">
-            <h1 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">
-              {recipe.title}
-            </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              {recipe.description}
-            </p>
+            <div className="mb-6">
+              <h1 className="text-4xl font-bold text-gray-800 dark:text-white mb-2">
+                {recipe.title}
+              </h1>
+              {recipe.thaiName && (
+                <p className="text-xl text-orange-600 dark:text-orange-400 font-medium mb-2">
+                  {recipe.thaiName}
+                </p>
+              )}
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
+                {recipe.description}
+              </p>
+              <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
+                <span className="bg-orange-100 dark:bg-orange-900 px-3 py-1 rounded-full">
+                  Serves {recipe.serves}
+                </span>
+              </div>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-8">
               <div>
@@ -386,6 +425,17 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
                 </ol>
               </div>
             </div>
+
+            {recipe.tip && (
+              <div className="mt-8 p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg border-l-4 border-orange-500">
+                <h3 className="text-lg font-semibold text-orange-800 dark:text-orange-200 mb-2">
+                  💡 Pro Tip
+                </h3>
+                <p className="text-orange-700 dark:text-orange-300">
+                  {recipe.tip}
+                </p>
+              </div>
+            )}
 
             <div className="mt-8 text-center">
               <p className="text-gray-600 dark:text-gray-400 mb-4">
