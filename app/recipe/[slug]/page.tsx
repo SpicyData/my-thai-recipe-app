@@ -348,7 +348,7 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
       <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-900 dark:to-black flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">Recipe Not Found</h1>
-          <p className="text-gray-600 dark:text-gray-400 mb-8">The recipe you're looking for doesn't exist.</p>
+          <p className="text-gray-600 dark:text-gray-400 mb-8">The recipe you&apos;re looking for doesn&apos;t exist.</p>
           <Link href="/" className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
             Back to Home
           </Link>
