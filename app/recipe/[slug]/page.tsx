@@ -1,9 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const recipes = {
   "pad-thai": {
     title: "Pad Thai",
     description: "Classic Thai stir-fried noodles with shrimp, tofu, and peanuts.",
+    image: "https://images.unsplash.com/photo-1559314809-0d155014e29e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     ingredients: [
       "200g rice noodles",
       "2 tablespoons vegetable oil",
@@ -33,6 +35,7 @@ const recipes = {
   "green-curry": {
     title: "Thai Green Curry",
     description: "Spicy and aromatic green curry with coconut milk and vegetables.",
+    image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     ingredients: [
       "2 tablespoons green curry paste",
       "1 can (400ml) coconut milk",
@@ -60,6 +63,7 @@ const recipes = {
   "massaman-curry": {
     title: "Beef Massaman Curry",
     description: "Rich, mild curry with tender beef and potatoes.",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     ingredients: [
       "2 tablespoons massaman curry paste",
       "1 can (400ml) coconut milk",
@@ -88,6 +92,7 @@ const recipes = {
   "holy-basil-chicken": {
     title: "Chicken Holy Basil and Chilli",
     description: "Stir-fried chicken with holy basil and spicy chillies.",
+    image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     ingredients: [
       "2 tablespoons vegetable oil",
       "3 cloves garlic, minced",
@@ -134,8 +139,13 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
         </Link>
 
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-          <div className="h-64 bg-gradient-to-br from-orange-200 to-red-200 dark:from-orange-800 dark:to-red-800 flex items-center justify-center">
-            <span className="text-8xl">🍜</span>
+          <div className="h-64 relative overflow-hidden">
+            <Image
+              src={recipe.image}
+              alt={recipe.title}
+              fill
+              className="object-cover"
+            />
           </div>
 
           <div className="p-8">

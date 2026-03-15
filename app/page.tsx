@@ -6,25 +6,25 @@ const recipes = [
     slug: "pad-thai",
     title: "Pad Thai",
     description: "Classic stir-fried noodles with shrimp, tofu, and peanuts.",
-    image: "/pad-thai.jpg", // placeholder
+    image: "https://images.unsplash.com/photo-1559314809-0d155014e29e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
   },
   {
     slug: "green-curry",
     title: "Thai Green Curry",
     description: "Spicy and aromatic curry with coconut milk and vegetables.",
-    image: "/green-curry.jpg",
+    image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
   },
   {
     slug: "massaman-curry",
     title: "Beef Massaman Curry",
     description: "Rich, mild curry with tender beef and potatoes.",
-    image: "/massaman-curry.jpg",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
   },
   {
     slug: "holy-basil-chicken",
     title: "Chicken Holy Basil and Chilli",
     description: "Stir-fried chicken with holy basil and spicy chillies.",
-    image: "/holy-basil-chicken.jpg",
+    image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
   },
 ];
 
@@ -54,8 +54,13 @@ export default function Home() {
           {recipes.map((recipe) => (
             <Link key={recipe.slug} href={`/recipe/${recipe.slug}`}>
               <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
-                <div className="h-48 bg-gradient-to-br from-orange-200 to-red-200 dark:from-orange-800 dark:to-red-800 flex items-center justify-center">
-                  <span className="text-6xl">🍜</span> {/* Placeholder emoji */}
+                <div className="h-48 relative overflow-hidden">
+                  <Image
+                    src={recipe.image}
+                    alt={recipe.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <div className="p-6">
                   <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mb-2 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">
