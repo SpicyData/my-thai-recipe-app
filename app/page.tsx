@@ -81,14 +81,6 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-900 dark:to-black">
       <div className="container mx-auto px-4 py-16">
         <header className="text-center mb-12">
-          <Image
-            className="mx-auto mb-4 dark:invert"
-            src="/next.svg"
-            alt="Next.js logo"
-            width={120}
-            height={24}
-            priority
-          />
           <h1 className="text-5xl font-bold text-gray-800 dark:text-white mb-4">
             Thai Recipes App
           </h1>
