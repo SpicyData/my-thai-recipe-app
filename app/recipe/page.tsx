@@ -5,6 +5,14 @@ const recipes = [
   { slug: "green-curry", title: "Thai Green Curry" },
   { slug: "massaman-curry", title: "Beef Massaman Curry" },
   { slug: "holy-basil-chicken", title: "Chicken Holy Basil and Chilli" },
+  { slug: "duck-red-curry", title: "Duck Red Curry" },
+  { slug: "tom-yum-king-prawn", title: "Tom Yum King Prawn" },
+  { slug: "tom-kha-chicken", title: "Tom Kha Chicken" },
+  { slug: "laab-chicken", title: "Laab Chicken" },
+  { slug: "yum-beef-salad", title: "Yum Beef Salad" },
+  { slug: "seafood-salad", title: "Seafood Salad" },
+  { slug: "som-tom-green-papaya-salad", title: "Som Tom Green Papaya Salad" },
+  { slug: "mango-sticky-rice", title: "Mango Sticky Rice" },
 ];
 
 export default function RecipesPage() {

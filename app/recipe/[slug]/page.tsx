@@ -114,6 +114,194 @@ const recipes = {
       "Toss in holy basil leaves and stir until wilted.",
       "Serve immediately with jasmine rice."
     ]
+  },
+  "duck-red-curry": {
+    title: "Duck Red Curry",
+    description: "Luxurious red curry with tender duck meat and pineapple.",
+    image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    ingredients: [
+      "2 tablespoons red curry paste",
+      "1 can (400ml) coconut milk",
+      "1 cup duck stock or chicken broth",
+      "2 tablespoons fish sauce",
+      "1 tablespoon sugar",
+      "500g duck meat, deboned and cubed",
+      "1 cup pineapple chunks",
+      "1 cup cherry tomatoes",
+      "1 cup eggplant, cubed",
+      "1/4 cup Thai basil leaves",
+      "Jasmine rice for serving"
+    ],
+    instructions: [
+      "Heat coconut cream in a wok over medium heat.",
+      "Add red curry paste and fry for 2 minutes until fragrant.",
+      "Add duck meat and cook until browned.",
+      "Pour in remaining coconut milk and stock, bring to a simmer.",
+      "Add fish sauce, sugar, pineapple, tomatoes, and eggplant.",
+      "Simmer for 15-20 minutes until duck is tender.",
+      "Stir in Thai basil leaves just before serving.",
+      "Serve hot with jasmine rice."
+    ]
+  },
+  "tom-yum-king-prawn": {
+    title: "Tom Yum King Prawn",
+    description: "Hot and sour soup with king prawns and lemongrass.",
+    image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    ingredients: [
+      "1 liter chicken or vegetable stock",
+      "2 stalks lemongrass, bruised",
+      "3 kaffir lime leaves",
+      "2 tablespoons fish sauce",
+      "1 tablespoon lime juice",
+      "2-3 Thai chillies, bruised",
+      "200g king prawns, peeled",
+      "100g mushrooms, sliced",
+      "2 tablespoons chili paste",
+      "Fresh cilantro for garnish"
+    ],
+    instructions: [
+      "Bring stock to a boil in a large pot.",
+      "Add lemongrass, kaffir lime leaves, and chillies. Simmer for 5 minutes.",
+      "Add chili paste and fish sauce, stir well.",
+      "Add prawns and mushrooms, cook for 3-4 minutes until prawns are pink.",
+      "Remove from heat and stir in lime juice.",
+      "Garnish with cilantro and serve hot."
+    ]
+  },
+  "tom-kha-chicken": {
+    title: "Tom Kha Chicken",
+    description: "Creamy coconut soup with chicken and galangal.",
+    image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    ingredients: [
+      "1 liter chicken stock",
+      "1 can (400ml) coconut milk",
+      "2 stalks lemongrass, bruised",
+      "3 slices galangal",
+      "3 kaffir lime leaves",
+      "2 tablespoons fish sauce",
+      "1 tablespoon lime juice",
+      "200g chicken breast, sliced",
+      "100g mushrooms, sliced",
+      "2-3 Thai chillies, bruised",
+      "Fresh cilantro for garnish"
+    ],
+    instructions: [
+      "Bring chicken stock to a boil in a large pot.",
+      "Add lemongrass, galangal, and kaffir lime leaves. Simmer for 5 minutes.",
+      "Add coconut milk and bring back to a simmer.",
+      "Add chicken and mushrooms, cook for 5-7 minutes until chicken is done.",
+      "Season with fish sauce, lime juice, and chillies.",
+      "Garnish with cilantro and serve hot."
+    ]
+  },
+  "laab-chicken": {
+    title: "Laab Chicken",
+    description: "Spicy minced chicken salad with herbs and lime.",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    ingredients: [
+      "500g ground chicken",
+      "2 tablespoons fish sauce",
+      "1 tablespoon lime juice",
+      "2-3 Thai chillies, chopped",
+      "2 shallots, thinly sliced",
+      "1/4 cup fresh mint leaves",
+      "1/4 cup fresh cilantro",
+      "2 tablespoons toasted rice powder",
+      "Lettuce leaves for serving"
+    ],
+    instructions: [
+      "Cook ground chicken in a pan over medium heat until browned, breaking up lumps.",
+      "In a bowl, mix cooked chicken with fish sauce, lime juice, and chillies.",
+      "Add shallots, mint, cilantro, and toasted rice powder. Mix well.",
+      "Serve on lettuce leaves as a fresh salad."
+    ]
+  },
+  "yum-beef-salad": {
+    title: "Yum Beef Salad",
+    description: "Tangy grilled beef salad with chili and lime dressing.",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    ingredients: [
+      "300g beef sirloin, grilled and sliced",
+      "2 tablespoons fish sauce",
+      "1 tablespoon lime juice",
+      "2-3 Thai chillies, chopped",
+      "2 shallots, thinly sliced",
+      "1 cucumber, sliced",
+      "1 tomato, wedged",
+      "1/4 cup fresh mint leaves",
+      "1/4 cup fresh cilantro"
+    ],
+    instructions: [
+      "Grill beef to medium-rare, then slice thinly.",
+      "In a bowl, whisk together fish sauce, lime juice, and chillies.",
+      "Add sliced beef, shallots, cucumber, tomato, mint, and cilantro.",
+      "Toss everything together and serve immediately."
+    ]
+  },
+  "seafood-salad": {
+    title: "Seafood Salad",
+    description: "Fresh mixed seafood with spicy lime dressing.",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    ingredients: [
+      "200g mixed seafood (shrimp, squid, mussels)",
+      "2 tablespoons fish sauce",
+      "1 tablespoon lime juice",
+      "2-3 Thai chillies, chopped",
+      "2 shallots, thinly sliced",
+      "1/4 cup fresh mint leaves",
+      "1/4 cup fresh cilantro",
+      "1 tablespoon palm sugar",
+      "Lettuce for serving"
+    ],
+    instructions: [
+      "Blanch seafood in boiling water for 1-2 minutes, then drain and cool.",
+      "In a bowl, mix fish sauce, lime juice, palm sugar, and chillies.",
+      "Add cooked seafood, shallots, mint, and cilantro.",
+      "Toss well and serve on lettuce leaves."
+    ]
+  },
+  "som-tom-green-papaya-salad": {
+    title: "Som Tom Green Papaya Salad",
+    description: "Shredded papaya with spicy, sour, and sweet dressing.",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    ingredients: [
+      "1 green papaya, shredded",
+      "2 tablespoons fish sauce",
+      "1 tablespoon lime juice",
+      "2-3 Thai chillies, chopped",
+      "2 cloves garlic, minced",
+      "1 tablespoon palm sugar",
+      "1 cup cherry tomatoes, halved",
+      "1/4 cup roasted peanuts",
+      "1 carrot, shredded"
+    ],
+    instructions: [
+      "Pound chillies and garlic in a mortar and pestle.",
+      "Add fish sauce, lime juice, and palm sugar, mix well.",
+      "In a bowl, combine papaya, carrot, tomatoes, and peanuts.",
+      "Pour dressing over and toss thoroughly.",
+      "Serve immediately as a fresh salad."
+    ]
+  },
+  "mango-sticky-rice": {
+    title: "Mango Sticky Rice",
+    description: "Sweet coconut sticky rice served with fresh mango.",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    ingredients: [
+      "1 cup glutinous rice",
+      "1 can (400ml) coconut milk",
+      "1/2 cup sugar",
+      "1/4 teaspoon salt",
+      "2 ripe mangoes, peeled and sliced",
+      "Sesame seeds for garnish (optional)"
+    ],
+    instructions: [
+      "Soak glutinous rice in water for 4 hours, then steam for 20-25 minutes until tender.",
+      "In a saucepan, heat coconut milk, sugar, and salt until sugar dissolves.",
+      "Pour half the coconut sauce over the cooked rice and let soak for 30 minutes.",
+      "Serve rice with sliced mango, drizzle remaining sauce on top.",
+      "Garnish with sesame seeds if desired."
+    ]
   }
 };
 

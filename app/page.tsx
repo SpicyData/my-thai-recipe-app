@@ -26,6 +26,54 @@ const recipes = [
     description: "Stir-fried chicken with holy basil and spicy chillies.",
     image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
   },
+  {
+    slug: "duck-red-curry",
+    title: "Duck Red Curry",
+    description: "Luxurious red curry with tender duck meat and pineapple.",
+    image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  },
+  {
+    slug: "tom-yum-king-prawn",
+    title: "Tom Yum King Prawn",
+    description: "Hot and sour soup with king prawns and lemongrass.",
+    image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  },
+  {
+    slug: "tom-kha-chicken",
+    title: "Tom Kha Chicken",
+    description: "Creamy coconut soup with chicken and galangal.",
+    image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  },
+  {
+    slug: "laab-chicken",
+    title: "Laab Chicken",
+    description: "Spicy minced chicken salad with herbs and lime.",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  },
+  {
+    slug: "yum-beef-salad",
+    title: "Yum Beef Salad",
+    description: "Tangy grilled beef salad with chili and lime dressing.",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  },
+  {
+    slug: "seafood-salad",
+    title: "Seafood Salad",
+    description: "Fresh mixed seafood with spicy lime dressing.",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  },
+  {
+    slug: "som-tom-green-papaya-salad",
+    title: "Som Tom Green Papaya Salad",
+    description: "Shredded papaya with spicy, sour, and sweet dressing.",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  },
+  {
+    slug: "mango-sticky-rice",
+    title: "Mango Sticky Rice",
+    description: "Sweet coconut sticky rice served with fresh mango.",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  },
 ];
 
 export default function Home() {
@@ -50,7 +98,7 @@ export default function Home() {
           </p>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {recipes.map((recipe) => (
             <Link key={recipe.slug} href={`/recipe/${recipe.slug}`}>
               <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
