@@ -123,7 +123,7 @@ const recipes = {
     title: "Duck Red Curry",
     thaiName: "Gaeng Phed Ped Yang",
     description: "Luxurious red curry with tender duck meat and pineapple.",
-    image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
     serves: "4",
     ingredients: [
@@ -150,7 +150,7 @@ const recipes = {
     title: "Tom Yum King Prawn",
     thaiName: "Tom Yum Goong",
     description: "Hot and sour soup with king prawns and lemongrass.",
-    image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
     serves: "4",
     ingredients: [
@@ -178,7 +178,7 @@ const recipes = {
     title: "Tom Kha Chicken Soup",
     thaiName: "Tom Kha Gai",
     description: "Creamy coconut soup with chicken and galangal.",
-    image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1569058242567-93de6f36f8e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
     serves: "4",
     ingredients: [
@@ -205,7 +205,7 @@ const recipes = {
     title: "Laab Chicken",
     thaiName: "Laab Gai",
     description: "Spicy minced chicken salad with herbs and lime.",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
     serves: "2–3",
     ingredients: [
@@ -232,7 +232,7 @@ const recipes = {
     title: "Yum Beef Salad",
     thaiName: "Yum Nua",
     description: "Tangy grilled beef salad with chili and lime dressing.",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
     serves: "2–3",
     ingredients: [
@@ -259,7 +259,7 @@ const recipes = {
     title: "Seafood Salad",
     thaiName: "Yum Talay",
     description: "Fresh mixed seafood with spicy lime dressing.",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1534080564583-6be75777b70a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
     serves: "3–4",
     ingredients: [
@@ -290,7 +290,7 @@ const recipes = {
     title: "Som Tum Green Papaya Salad",
     thaiName: "Som Tum Thai",
     description: "Shredded papaya with spicy, sour, and sweet dressing.",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
     serves: "2",
     ingredients: [
@@ -318,7 +318,7 @@ const recipes = {
     title: "Mango Sticky Rice",
     thaiName: "Khao Niao Mamuang",
     description: "Sweet coconut sticky rice served with fresh mango.",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     video: "https://www.youtube.com/watch?v=8v0M5jz7s0I",
     serves: "4",
     ingredients: [
@@ -340,8 +340,9 @@ const recipes = {
   }
 };
 
-export default function RecipePage({ params }: { params: { slug: string } }) {
-  const recipe = recipes[params.slug as keyof typeof recipes];
+export default async function RecipePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const recipe = recipes[slug as keyof typeof recipes];
 
   if (!recipe) {
     return (
